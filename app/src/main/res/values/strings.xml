@@ -3,4 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="mail">Mail</string>
+    <string name="auto_spam_label">Automatically Delete Spam</string>
+    <string name="auto_cache_label">Automatically Clear Cache</string>
+    <string name="auto_sync_label">Automatically Sync</string>
 </resources>

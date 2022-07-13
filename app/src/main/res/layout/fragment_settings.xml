@@ -19,6 +19,60 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:id="@+id/autoSpamLabel"
+        android:text="@string/auto_spam_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/mailLabel"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <CheckBox
+        android:id="@+id/checkSpamDeletion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mailLabel"/>
+
+    <TextView
+        android:id="@+id/autoCacheLabel"
+        android:text="@string/auto_cache_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/autoSpamLabel"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <CheckBox
+        android:id="@+id/checkCacheClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkSpamDeletion"/>
+
+    <TextView
+        android:id="@+id/autoSyncLabel"
+        android:text="@string/auto_sync_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/autoCacheLabel"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <CheckBox
+        android:id="@+id/checkAutoSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkCacheClear"/>
+
     <ImageView
         android:id="@+id/inboxButton"
         android:padding="24dp"
