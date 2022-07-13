@@ -11,6 +11,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fakemailbox.R
+import com.example.fakemailbox.data.model.Mail
 import com.example.fakemailbox.shared.MailViewModel
 import com.example.fakemailbox.ui.adapters.MailAdapter
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,6 +26,10 @@ class InboxFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        //State Management
+        var sortState = 1
+
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_inbox, container, false)
 
@@ -34,8 +39,12 @@ class InboxFragment : Fragment() {
             settingsButton.findNavController().navigate(R.id.action_inboxFragment_to_settingsFragment)
         }
 
+        val sortButton : ImageView = view.findViewById(R.id.sortButton)
+
+
         //GetData
-        vm.fetchMailList().observe(viewLifecycleOwner) {
+        vm.fetchMailList().observe(viewLifecycleOwner) { it
+
             val recyclerView : RecyclerView = view.findViewById(R.id.mailRecycler)
             val adapter = MailAdapter(it)
             recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -45,5 +54,6 @@ class InboxFragment : Fragment() {
 
         return view
     }
+
 
 }

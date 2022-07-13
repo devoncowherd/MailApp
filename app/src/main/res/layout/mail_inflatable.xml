@@ -6,10 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/mail_divider"/>
+        android:layout_height="wrap_content"
+        android:background="@drawable/mail_divider"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
     <TextView
         android:id="@+id/mailId"
         android:text="0"
@@ -39,8 +42,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/priorityIndicator"
-        />
+        app:layout_constraintBottom_toTopOf="@id/priorityIndicator" />
+
     <ImageView
         android:id="@+id/priorityIndicator"
         android:src="@drawable/ic_baseline_star_outline_24"
@@ -48,7 +51,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

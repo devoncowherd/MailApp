@@ -1,5 +1,6 @@
 package com.example.fakemailbox.ui.adapters
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +19,7 @@ class MailAdapter(dataSet : MutableList<Mail>?) : RecyclerView.Adapter<MailAdapt
     class MailViewHolder(_view : View) : RecyclerView.ViewHolder(_view) {
         val view = _view
         val mailId : TextView = view.findViewById(R.id.mailId)
+        val mailDate : TextView = view.findViewById(R.id.date)
         val priorityIndicator : ImageView = view.findViewById(R.id.priorityIndicator)
         val mailHeader : TextView = view.findViewById(R.id.mailHeader)
     }
@@ -33,6 +35,12 @@ class MailAdapter(dataSet : MutableList<Mail>?) : RecyclerView.Adapter<MailAdapt
     override fun onBindViewHolder(holder: MailAdapter.MailViewHolder, position: Int) {
         holder.mailId.text = mailList?.get(position)?.id.toString()
         holder.mailHeader.text  = mailList?.get(position)?.fromDate.toString()
+        holder.mailDate.text = mailList?.get(position)?.fromDate.toString()
+
+        if(mailList?.get(position)?.readIndicator == false) {
+            holder.mailId.setTextColor(Color.parseColor("#FF000000"))
+            holder.mailHeader.setTextColor(Color.parseColor("#FF000000"))
+        }
 
         if(mailList?.get(position)?.priorityIndicator == true) {
             holder.priorityIndicator.setImageResource(R.drawable.ic_baseline_star_24)
@@ -45,7 +53,7 @@ class MailAdapter(dataSet : MutableList<Mail>?) : RecyclerView.Adapter<MailAdapt
         return mailList!!.size
     }
 
-    fun update(){
+    fun update() {
         notifyDataSetChanged()
     }
 }
