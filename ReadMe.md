@@ -1,10 +1,10 @@
 # MailApp
 
-![mailApp](https://user-images.githubusercontent.com/71043147/178652297-97c59fa0-89f2-4b18-bb8f-720dd357d38b.gif)
+- Demonstrates consuming an API, Rendering in RecyclerViews and Constraint Layouts, Handles Exceptions, Localizes;![mailApp](https://user-images.githubusercontent.com/71043147/178652297-97c59fa0-89f2-4b18-bb8f-720dd357d38b.gif)
 
 ###
 
-- Demonstrates consuming an API, Rendering in RecyclerViews and Constraint Layouts, Handles Exceptions, Localizes;
+
 
 ### Techologies
 
