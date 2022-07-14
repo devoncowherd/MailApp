@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">FakeMailbox</string>
     <string name="mail">Correo</string>
-    <string name="auto_spam_label">25 / 5,000 Translation results Eliminar automáticamente el correo no deseado</string>
+    <string name="auto_spam_label">Automáticamente el correo no deseado</string>
     <string name="auto_cache_label">Borrar caché automáticamente</string>
     <string name="auto_sync_label">Sincronizar automáticamente</string>
 </resources>
