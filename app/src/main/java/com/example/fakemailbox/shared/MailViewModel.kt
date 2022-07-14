@@ -17,9 +17,17 @@ class MailViewModel @Inject constructor(
    fun fetchMailList() : MutableLiveData<MutableList<Mail>?>{
        var result : MutableLiveData<MutableList<Mail>?> = MutableLiveData<MutableList<Mail>?>()
        viewModelScope.launch(Dispatchers.IO) {
-           val response = mailRepository.fetchMailList().body()
-           result.postValue(response)
+           val response = mailRepository.fetchMailList()
+
+           //asynchronously currently only returns the call if it is successful
+           if(response.isSuccessful) {
+               result.postValue(response.body())
+           }
        }
+
        return result
    }
+
+
+
 }
