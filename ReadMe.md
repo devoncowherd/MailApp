@@ -22,6 +22,8 @@
 ### Design Patterns
 
 - MVVM
+- Clean Architecture
+- Responsive UI
 
 ---
 
