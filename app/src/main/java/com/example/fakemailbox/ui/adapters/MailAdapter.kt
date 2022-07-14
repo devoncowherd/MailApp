@@ -40,6 +40,9 @@ class MailAdapter(dataSet : MutableList<Mail>?) : RecyclerView.Adapter<MailAdapt
         if(mailList?.get(position)?.readIndicator == false) {
             holder.mailId.setTextColor(Color.parseColor("#FF000000"))
             holder.mailHeader.setTextColor(Color.parseColor("#FF000000"))
+        } else {
+            holder.mailId.setTextColor(Color.parseColor("#FF808080"))
+            holder.mailHeader.setTextColor(Color.parseColor("#FF808080"))
         }
 
         if(mailList?.get(position)?.priorityIndicator == true) {

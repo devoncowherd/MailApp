@@ -32,7 +32,7 @@ class SettingsFragment : Fragment() {
         val syncBox : CheckBox = view.findViewById(R.id.checkAutoSync)
 
         //Restores preferences
-        getPrefs(deleteSpamBox,cacheBox,syncBox)
+        getPrefs(deleteSpamBox, cacheBox, syncBox)
 
 
         //Update Preferences

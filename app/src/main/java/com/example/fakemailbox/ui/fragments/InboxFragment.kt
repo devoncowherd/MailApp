@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -43,13 +44,44 @@ class InboxFragment : Fragment() {
 
 
         //GetData
-        vm.fetchMailList().observe(viewLifecycleOwner) { it
+        vm.fetchMailList().observe(viewLifecycleOwner) { mailList ->
 
+            var sortState = 0
             val recyclerView : RecyclerView = view.findViewById(R.id.mailRecycler)
-            val adapter = MailAdapter(it)
+            val adapter = MailAdapter(mailList)
             recyclerView.layoutManager = LinearLayoutManager(requireContext())
             recyclerView.adapter = adapter
             adapter.update()
+            sortButton.setOnClickListener {
+                when(sortState) {
+                    0 -> {
+                        ++sortState
+                        mailList?.sortByDescending { it.id }
+                        adapter.update()
+                        Toast.makeText(requireContext(), "Sorted By Descending ID",Toast.LENGTH_SHORT).show()
+                    }
+                    1 ->  {
+                        ++sortState
+                        mailList?.sortBy { it.fromDate }
+                        adapter.update()
+                        Toast.makeText(requireContext(), "Sorted By Date",Toast.LENGTH_SHORT).show()
+                    }
+                    2 -> {
+                        ++sortState
+                        mailList?.sortedByDescending { it.fromDate }
+                        adapter.update()
+                        Toast.makeText(requireContext(), "Sorted By Descending Date",Toast.LENGTH_SHORT).show()
+                    }
+                    3 -> {
+                        if(sortState >= 3){
+                            sortState = 0
+                        }
+                        mailList?.sortBy { it.id }
+                        adapter.update()
+                        Toast.makeText(requireContext(), "Sorted By ID",Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
         }
 
         return view
