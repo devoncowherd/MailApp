@@ -5,7 +5,7 @@
 - Shows Mail Priority 
 - Shows Read Mail 
 - Handles Exceptions 
-- Localizes;
+- Localizes
 
 ---
 
