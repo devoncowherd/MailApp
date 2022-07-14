@@ -10,7 +10,7 @@
 ---
 
 ![editprefs](https://user-images.githubusercontent.com/71043147/178866639-d5a0fad8-8bbf-427a-bf73-dacf99b8042e.gif)
-![sorting](https://user-images.githubusercontent.com/71043147/178865767-a7e64da1-775c-4acc-963d-92a2322ea02d.gif)
+![sorted](https://user-images.githubusercontent.com/71043147/178866744-98a72426-95bf-4058-a401-9cba4cc6051f.gif)
 
 
 
