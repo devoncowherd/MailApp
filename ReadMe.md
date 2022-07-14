@@ -19,12 +19,12 @@
 - Retrofit 2.9.0
 
 ---
-Design Patterns
+### Design Patterns
 
 - MVVM
 
 ---
 
-Contributors
+### Contributors
 
 - Devon Cowherd
