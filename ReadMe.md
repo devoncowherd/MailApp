@@ -1,17 +1,17 @@
 # MailApp
 
 - Demonstrates consuming an API 
-- Rendering and Sorting in RecyclerViews which uses Constraint Layouts 
+- Rendering, Sorting in RecyclerViews, && Constraint Layouts 
 - Shows Mail Priority 
 - Shows Read Mail 
 - Handles Exceptions 
-- Localizes;
+- Localizes
 
 ---
 
-![mailApp](https://user-images.githubusercontent.com/71043147/178652297-97c59fa0-89f2-4b18-bb8f-720dd357d38b.gif)
-
-###
+![editprefs](https://user-images.githubusercontent.com/71043147/178866639-d5a0fad8-8bbf-427a-bf73-dacf99b8042e.gif)
+![sorted](https://user-images.githubusercontent.com/71043147/178866744-98a72426-95bf-4058-a401-9cba4cc6051f.gif)
+![langEdit](https://user-images.githubusercontent.com/71043147/178867375-1aaa5f51-133e-487d-8492-baa5f00a10ea.gif)
 
 
 
