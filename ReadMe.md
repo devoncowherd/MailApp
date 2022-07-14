@@ -23,3 +23,8 @@ Design Patterns
 
 - MVVM
 
+---
+
+Contributors
+
+- Devon Cowherd
