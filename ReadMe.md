@@ -6,10 +6,12 @@
 - Shows Read Mail 
 - Handles Exceptions 
 - Localizes;
-![mailApp](https://user-images.githubusercontent.com/71043147/178652297-97c59fa0-89f2-4b18-bb8f-720dd357d38b.gif)
+
+---
+
+![editprefs](https://user-images.githubusercontent.com/71043147/178866639-d5a0fad8-8bbf-427a-bf73-dacf99b8042e.gif)
 ![sorting](https://user-images.githubusercontent.com/71043147/178865767-a7e64da1-775c-4acc-963d-92a2322ea02d.gif)
 
-###
 
 
 
