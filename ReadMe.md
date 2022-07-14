@@ -1,7 +1,7 @@
 # MailApp
 
 - Demonstrates consuming an API 
-- Rendering and Sorting in RecyclerViews which uses Constraint Layouts 
+- Rendering, Sorting in RecyclerViews, && Constraint Layouts 
 - Shows Mail Priority 
 - Shows Read Mail 
 - Handles Exceptions 
